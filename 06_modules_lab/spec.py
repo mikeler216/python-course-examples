@@ -7,7 +7,7 @@ class TestEx1(unittest.TestCase):
     def test_print_hello_python(self):
         proc = subprocess.Popen([sys.executable, '01.py', '5'],
                                 stdout=subprocess.PIPE)
-        for i in range(5):
+        for _ in range(5):
             line = proc.stdout.readline()
             self.assertEqual('hello python', line.strip().lower())
 

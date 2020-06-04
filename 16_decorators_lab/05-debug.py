@@ -13,12 +13,7 @@ def debug(f):
 
 def sum_digits(n):
     digits = str(n)
-    result = 0
-
-    for char in digits:
-        result += int(char)
-
-    return result
+    return sum(int(char) for char in digits)
 
 print sum_digits(1531221)
 

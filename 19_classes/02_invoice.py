@@ -8,7 +8,7 @@ class Invoice(object):
         self.items += [(item, price)]
 
     def total(self):
-        return sum([i[1] for i in self.items]) * Invoice.vat
+        return sum(i[1] for i in self.items) * Invoice.vat
 
     @classmethod
     def price_with_vat(cls, price):

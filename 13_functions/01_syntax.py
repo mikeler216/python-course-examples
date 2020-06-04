@@ -11,8 +11,7 @@ def greet():
     print "***********"
 
 def sum_digits(n):
-    res = sum([int(d) for d in str(n)])
-    return res
+    return sum(int(d) for d in str(n))
 
 def my_sum(start,*args):
     res = start * start
